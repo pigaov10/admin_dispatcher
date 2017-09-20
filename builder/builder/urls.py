@@ -16,8 +16,12 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
+from api import views
+
 admin.site.site_header = 'Employee Manager'
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^employees/', views.EmployeeList.as_view(), name='Get Employee Id'),
+    url(r'^employee/(?P<pk>[0-9]+)/$', views.EmployeeId.as_view(), name='Get Employee Id')
 ]
