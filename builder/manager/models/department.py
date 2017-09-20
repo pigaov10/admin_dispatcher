@@ -10,9 +10,9 @@ class Department(models.Model):
                                    blank=True)
 
     def __str__(self):
-        return unicode(self.name).encode('utf-8', 'ignore')
+        return self.name
 
     class Meta:
+        app_label = 'manager'
         verbose_name_plural = 'departments'
-        managed = False
         db_table = 'department'
