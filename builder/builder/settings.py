@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_nose',
+    'django_coverage',
     'manager'
 ]
 
@@ -80,6 +82,16 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+# Tests
+# Use nose to run all tests
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
+
+# Tell nose to measure coverage on the 'manager' apps
+NOSE_ARGS = [
+    '--with-coverage',
+    '--cover-package=manager',
+]
 
 
 # Password validation

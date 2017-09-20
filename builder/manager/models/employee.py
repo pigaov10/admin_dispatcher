@@ -18,10 +18,14 @@ class Employee(models.Model):
                                    default=None,
                                    on_delete=models.CASCADE)
 
-    def __str__(self):
-        return self.name
 
     class Meta:
         app_label = 'manager'
         verbose_name_plural = 'employees'
         db_table = 'employee'
+
+    def __unicode__(self):
+        return self.name
+
+    def __repr__(self):
+        return self.name
