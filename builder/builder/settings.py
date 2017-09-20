@@ -25,7 +25,7 @@ SECRET_KEY = 'ppx9es_umjpgspj)vqiw0qmguf0%2j2uqa=@b+j3#ker-1-#68'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0:6666', 'localhost']
 
 
 # Application definition
@@ -42,6 +42,12 @@ INSTALLED_APPS = [
     'manager',
     'rest_framework',
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAdminUser',),
+    'PAGE_SIZE': 10,
+    'EXCEPTION_HANDLER': 'rest_framework.views.exception_handler'
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

@@ -15,7 +15,7 @@ class Employee(models.Model):
     created = models.DateTimeField(auto_now_add=True,
                                    blank=True)
     department = models.ForeignKey('Department',
-                                   default=None,
+                                   related_name='employee',
                                    on_delete=models.CASCADE)
 
 
@@ -25,6 +25,9 @@ class Employee(models.Model):
         db_table = 'employee'
 
     def __unicode__(self):
+        return self.name
+
+    def __str__(self):
         return self.name
 
     def __repr__(self):
