@@ -1,0 +1,8 @@
+Django==1.11.5
+nose
+pyflakes
+pylint
+coverage
+djangorestframework
+markdown
+django-filter
