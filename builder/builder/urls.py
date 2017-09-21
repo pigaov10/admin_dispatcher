@@ -22,6 +22,6 @@ admin.site.site_header = 'Employee Manager'
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^employee/', views.list),
+    url(r'^employees/', views.list),
     url(r'^employee/(?P<pk>[0-9]+)/$', views.detail)
 ]

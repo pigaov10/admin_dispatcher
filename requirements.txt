@@ -8,4 +8,5 @@ markdown
 django-filter
 django_nose
 django_coverage
-pygments  
+pygments
+pylint-django

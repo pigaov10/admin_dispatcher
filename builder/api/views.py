@@ -18,7 +18,8 @@ def detail(request, pk):
     try:
         employee = Employee.objects.get(employee_id=pk)
     except Employee.DoesNotExist:
-        return Response(status=status.HTTP_404_NOT_FOUND)
+        return Response([{'employee': []}],
+                        status=status.HTTP_404_NOT_FOUND)
 
     if request.method == 'GET':
         serializer = EmployeeSerializer(employee)
