@@ -51,7 +51,7 @@ $ python manage.py runserver
 ### API
 
 > Via Browser, você poderá acessar o Admin do Django REST Framework
-> http://127.0.0.1:8000/employee/
+> http://127.0.0.1:8000/employees/
 > Via Curl adicione o comandos abaixo: (Obs: Autenticacao é feita com usuario do ADMIN)
 
 #### Lista todos os Employee
