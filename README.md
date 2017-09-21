@@ -1,5 +1,8 @@
 # Luiza Labs Django Coding Test
 
+[![Build Status](https://travis-ci.org/pigaov10/desafio.svg?branch=master)](https://travis-ci.org/pigaov10/desafio)
+
+
 ### Linguagem / Framework / Banco de dados
 * [Python 3.6] - https://www.python.org/
 * [Django 1.11.5] - https://www.djangoproject.com/
