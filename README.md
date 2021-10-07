@@ -1,4 +1,4 @@
-# Luiza Labs Django Coding Test
+
 
 [![Build Status](https://travis-ci.org/pigaov10/desafio.svg?branch=master)](https://travis-ci.org/pigaov10/desafio) | <a href="https://codeclimate.com/github/pigaov10/desafio"><img src="https://codeclimate.com/github/pigaov10/desafio/badges/gpa.svg" /></a> | <a href="https://codeclimate.com/github/pigaov10/desafio"><img src="https://codeclimate.com/github/pigaov10/desafio/badges/issue_count.svg" /></a>
 
